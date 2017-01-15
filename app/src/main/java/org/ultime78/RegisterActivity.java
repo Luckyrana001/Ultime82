@@ -33,6 +33,7 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.Auth;
@@ -50,6 +51,7 @@ import com.google.gson.Gson;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -114,9 +116,9 @@ public class RegisterActivity extends BaseActivity implements
 
             }
         });
-      /*  LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
+        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email"));
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("user_status"));*/
+        //LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("user_status"));
 
 
         edt_mobile = (EditText) findViewById(R.id.mobnum1);
@@ -228,7 +230,7 @@ public class RegisterActivity extends BaseActivity implements
     {
         super.onBackPressed();
         finish();
-        overridePendingTransition(R.anim.slide_out_right, R.anim.slide_in_left);
+        //overridePendingTransition(R.anim.slide_out_right, R.anim.slide_in_left);
 
     }
 
