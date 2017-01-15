@@ -8,16 +8,20 @@
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\src\\main\\res\\drawable\\avaa.png"
     },
     {
-        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\envelope.png",
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
@@ -104,6 +112,10 @@
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\src\\main\\res\\drawable\\ggg.png"
     },
     {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\phne.png",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\src\\main\\res\\drawable\\phne.png"
     },
@@ -140,12 +152,20 @@
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\src\\main\\res\\drawable\\earth.png"
     },
     {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
@@ -170,6 +190,10 @@
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.png",
@@ -252,6 +276,10 @@
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+    },
+    {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_vector_test.xml"
     },
@@ -310,6 +338,10 @@
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Rana lucky\\Desktop\\Ultime82\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location.png",
