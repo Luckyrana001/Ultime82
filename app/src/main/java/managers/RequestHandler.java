@@ -7,6 +7,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.extect.appbase.BaseModel;
 import com.google.gson.Gson;
@@ -48,16 +49,19 @@ public class RequestHandler {
         }
         return requestHandler;
     }
+
+        /*method used to handle Json response*/
+
     public void login(final IResponseReceivedNotifyInterface iResponseReceivedNotifyInterface, String userName, String pswd) {
 
          /*Post data*/
         Map<String, String> jsonParams = new HashMap<>();
-        /*jsonParams.put("mobile", userName);
-        jsonParams.put("chtype", pswd);*/
+        jsonParams.put("mobile", userName);
+        jsonParams.put("chtype", pswd);
 
-        String url = AppConstants.getLoginUrl()+"mobile"+userName+"chtype="+pswd;
+        String url = AppConstants.getLoginUrl()/*+"mobile"+userName+"chtype="+pswd*/;
 
-        JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.GET, url,null,
+        JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.POST, url,new JSONObject(jsonParams),
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
@@ -70,7 +74,8 @@ public class RequestHandler {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        iResponseReceivedNotifyInterface.responseReceived(new ResponseArgs(null, ResponseStatus.badRequest, RequestType.Login));
+                        iResponseReceivedNotifyInterface.responseReceived(new ResponseArgs(null, ResponseStatus.badRequest,
+                                RequestType.Login));
                     }
                 }) {
             @Override
@@ -85,5 +90,46 @@ public class RequestHandler {
         };
         queue.add(postRequest);
     }
+
+
+    /*method used to handle string response*/
+    public void dologin(final IResponseReceivedNotifyInterface iResponseReceivedNotifyInterface, final String userName, final String pswd) {
+
+        String url = AppConstants.getLoginUrl()+"mobile="+userName+"&chtype="+pswd;
+
+
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        iResponseReceivedNotifyInterface.stringResponseReceived(response);
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        iResponseReceivedNotifyInterface.stringResponseReceived("Bad Request");
+
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> map = new HashMap<String, String>();
+
+                /*map.put("mobile",userName);
+                map.put("chtype", pswd);*/
+                return map;
+            }
+        };
+       RequestQueue requestQueue = Volley.newRequestQueue(BaseFlyContext.getInstant().getApplicationContext());
+        requestQueue.add(stringRequest);
+
+
+
+
+    }
+
 
 }

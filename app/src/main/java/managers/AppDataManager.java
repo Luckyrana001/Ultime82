@@ -116,7 +116,9 @@ public class AppDataManager {
      */
 
     public void login(final IResponseReceivedNotifyInterface iResponseReceivedNotifyInterface, String userName, String password) {
-        RequestHandler.getRequestHandler().login(iResponseReceivedNotifyInterface, userName, password);
+        //RequestHandler.getRequestHandler().login(iResponseReceivedNotifyInterface, userName, password);
+        RequestHandler.getRequestHandler().dologin(iResponseReceivedNotifyInterface, userName, password);
+
     }
 
 

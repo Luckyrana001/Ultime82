@@ -53,15 +53,9 @@ public abstract class BaseActivity extends AppCompatActivity implements OnFragme
         super.onCreate(savedInstanceState);
         // getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
 
+        fontAwesome = Typeface.createFromAsset(getAssets(),"fonts/OpenSans-Regular.ttf");
 
-//        openSansLight = Typeface.createFromAsset(getAssets(),"fonts/OpenSans-Light.ttf");
-//        openSansRegular = Typeface.createFromAsset(getAssets(),"fonts/OpenSans-Regular.ttf");
-//        openSansSemibold = Typeface.createFromAsset(getAssets(),"fonts/OpenSans-Semibold.ttf");
-        fontAwesome = Typeface.createFromAsset(getAssets(), "fonts/fontawesome-webfont.ttf");
-
-        newJuneRegular = Typeface.createFromAsset(getAssets(), "fonts/NewJuneRegular.ttf");
-        //openSansRegular = Typeface.createFromAsset(getAssets(), "fonts/NewJuneRegular.ttf");
-       // openSansSemibold = Typeface.createFromAsset(getAssets(), "fonts/NewJuneRegular.ttf");
+        newJuneRegular = Typeface.createFromAsset(getAssets(),"fonts/OpenSans-Regular.ttf");
 
         Mint.initAndStartSession(this.getApplication(), "d7cde585");
         //registerNetworkReciever();

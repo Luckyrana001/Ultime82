@@ -6,4 +6,6 @@ package listeners;
 public interface IResponseReceivedNotifyInterface {
 
     void responseReceived(ResponseArgs responseArgs);
+
+    void stringResponseReceived(String response);
 }

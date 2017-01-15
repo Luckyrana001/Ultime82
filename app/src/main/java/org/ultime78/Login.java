@@ -15,12 +15,15 @@ import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.extect.appbase.BaseActivity;
+import com.extect.appbase.BaseModel;
 
+import common.Constants;
 import listeners.IResponseReceivedNotifyInterface;
 import listeners.ResponseArgs;
 import managers.AppDataManager;
 import shared.BaseFlyContext;
 import utils.RequestType;
+import utils.ResponseStatus;
 import utils.SettingServices;
 import utils.Utils;
 
@@ -50,11 +53,16 @@ public class Login extends BaseActivity implements IResponseReceivedNotifyInterf
         /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.activity_login);
+        hideKeyboard(activity);
 
         SettingServices.init(getApplicationContext());
         BaseFlyContext.getInstant().setActivity(this);
         activity = Login.this;
+
+
         initLayout();
+
+
         getmActionBar();
         mActionBar.hide();
         hideKeyboard(activity);
@@ -76,6 +84,9 @@ public class Login extends BaseActivity implements IResponseReceivedNotifyInterf
         singupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                hideKeyboard(activity);
+
                 Intent i_signup = new Intent(Login.this, RegisterActivity.class);
                 startActivity(i_signup);
                 /* Start right to left animation*/
@@ -96,6 +107,7 @@ public class Login extends BaseActivity implements IResponseReceivedNotifyInterf
 
     private void userLogin() {
 
+        hideKeyboard(activity);
 
         mobile = userNameEt.getText().toString().trim();
         password = passwordEt.getText().toString().trim();
@@ -108,7 +120,6 @@ public class Login extends BaseActivity implements IResponseReceivedNotifyInterf
 
             if (Utils.isNetworkConnected(this, true, R.style.AppCompatAlertDialogStyle)) {
                 progressDialog = new ProgressDialog(this, R.style.AppCompatAlertDialogStyle);
-
                 progressDialog.setMessage("Loading...");
                 progressDialog.show();
 
@@ -123,35 +134,55 @@ public class Login extends BaseActivity implements IResponseReceivedNotifyInterf
     }
 
 
-    private void openProfile() {
-        passwordEt.setText("");
-        userNameEt.setText("");
-        Toast.makeText(Login.this, "Login sucessful", Toast.LENGTH_LONG).show();
-    }
-
     @Override
     public void responseReceived(ResponseArgs responseArgs) {
         progressDialog.dismiss();
-        //if (responseArgs.args != null) {
-                     /*   BaseModel clinicModel = (BaseModel) responseArgs.args;
+        if (responseArgs.args != null) {
+            BaseModel clinicModel = (BaseModel) responseArgs.args;
 
-                        if (responseArgs.responseStatus == ResponseStatus.success) {
+            if (responseArgs.responseStatus == ResponseStatus.success) {
 
-                                if (clinicModel.respCode.equals(Constants.ERROR_CODE_SUCCESS_1000)) {
-*/
-        if (responseArgs.requestType == RequestType.Login) {
+                if (clinicModel.respCode.equals(Constants.ERROR_CODE_SUCCESS_1000)) {
 
-            Toast.makeText(Login.this, "Login Sucessful", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(Login.this, MainActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+                    if (responseArgs.requestType == RequestType.Login) {
+
+                        Toast.makeText(Login.this, "Login Sucessful", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(Login.this, MainActivity.class);
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    @Override
+    public void stringResponseReceived(String response) {
+        progressDialog.dismiss();
+        if (response != null) {
+            if (response.trim().equals("\"s^existmobile\"")) {
+                showToast("Login Successful.");
+                Intent intent = new Intent(Login.this, MainActivity.class);
+                startActivity(intent);
+
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+                finish();
+            } else if (response.trim().equals("\"s^notexist\"")) {
+                showToast("User do not exist, Please register.");
+            }
+            else
+            {
+                showToast("Error:  "+response);
+            }
+
+
+        } else {
+            showToast("Error:  "+response);
 
         }
-        // }
-
-        //}
-        // }
-
     }
 
     @Override

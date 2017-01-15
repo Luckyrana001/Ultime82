@@ -1,7 +1,0 @@
-#Sat Jan 14 16:57:43 SGT 2017
-base.0=C\:\\Users\\Rana lucky\\Downloads\\Ultime82-20170113T173020Z\\Ultime82\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0b9e9921c2a7d4242135b1b9ebe0fc73fc55df34
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\Rana lucky\\Downloads\\Ultime82-20170113T173020Z\\Ultime82\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d36983a49875e37430c7a15d633322d5533406c5\\classes.dex
-base.1=C\:\\Users\\Rana lucky\\Downloads\\Ultime82-20170113T173020Z\\Ultime82\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d36983a49875e37430c7a15d633322d5533406c5
-file.0=C\:\\Users\\Rana lucky\\Downloads\\Ultime82-20170113T173020Z\\Ultime82\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0b9e9921c2a7d4242135b1b9ebe0fc73fc55df34\\classes.dex
